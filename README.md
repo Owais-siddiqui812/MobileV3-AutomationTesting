@@ -1,13 +1,13 @@
-📱 Mobile Automation Framework – General Store App
+Mobile Automation Framework – General Store App
 🚀 Overview
 
-This project is a Mobile Automation Framework built using:
+This project is a Mobile Test Automation Framework built using:
 
 Java
 
-TestNG
-
 Appium (UIAutomator2)
+
+TestNG
 
 Page Object Model (POM)
 
@@ -15,14 +15,15 @@ Hybrid App Automation (Native + WebView)
 
 The framework automates the General Store Android Application, including complete purchase flow and WebView handling.
 
-🏗 Framework Architecture
+🏗 Framework Structure
+
 MobileV3ow/
 │
 ├── testBase/
 │   └── BaseClass.java
 │
 ├── pageObjects/
-│   └── Page Classes (POM)
+│   └── Page classes (POM)
 │
 ├── testCases/
 │   ├── Tc_01LauncApp
@@ -37,23 +38,25 @@ MobileV3ow/
 │   └── General-Store.apk
 │
 └── testng.xml
+
+
 🧪 Test Scenarios Covered
-Test Case	Description
-Tc_01LauncApp	Launch application
-Tc_02Letshop	Fill user details
-Tc_03Us_Select	Country selection
-Tc_04Validate_Toast	Validate Toast message
-Tc_05Addto_Cart	Add items to cart
-Tc_06TermsandCondition	Validate terms and conditions
-Tc_07CompletePurchase	Complete purchase & switch to WebView
-⚙️ Parallel Execution Configuration
 
-This framework supports parallel execution using TestNG.
+Launch Application
 
-<suite thread-count="2" name="Suite" parallel="true">
+Enter User Details
 
-✔ Runs 2 threads simultaneously
-✔ Executes AndroidTest1 and AndroidTest2 in parallel
+Country Selection
+
+Toast Message Validation
+
+Add Products to Cart
+
+Validate Terms & Conditions
+
+Complete Purchase
+
+Switch to WebView and perform Web actions
 
 🔧 Prerequisites
 
@@ -63,49 +66,26 @@ Maven
 
 Appium 2.x
 
-Android Studio
-
-Android Emulator (API 36 recommended)
-
 Node.js
 
-▶️ How to Run Tests
-1️⃣ Start Appium Server
+Android Studio
 
-Recommended (Auto Chromedriver Download):
+Android Emulator (API 36 or above)
 
-appium --allow-insecure chromedriver_autodownload
-2️⃣ Start Android Emulator
+🌐Hybrid App Handling
 
-Example:
+This project handles Native and WebView contexts:
 
-emulator-5554
-3️⃣ Run TestNG Suite
+🧠 Framework Features
 
-From IDE:
+Page Object Model Design
 
-Right click testng.xml
+Reusable Base Class
 
-Run as TestNG Suite
+Hybrid App Automation
 
-Or using Maven:
+Toast Message Validation
 
-mvn test
-🌐 Hybrid App Handling
+Parallel Execution Support
 
-The framework handles:
-
-driver.context("WEBVIEW_com.androidsample.generalstore");
-
-For WebView automation:
-
-Chromedriver version must match Chrome version inside emulator
-
-OR use Appium auto-download option
-
-📦 Key Capabilities Used
-UiAutomator2Options options = new UiAutomator2Options();
-
-options.setDeviceName("emulator-5554");
-options.setApp("path_to_apk");
-options.setAutomationName("UIAutomator2");
+Clean and Maintainable Code Structure
