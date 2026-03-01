@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="true">
+  <test  name="AndroidTest1">
+    <classes>
+      <class name="testCases.Tc_02Letshop"/>
+      <class name="testCases.Tc_04Validate_Toast"/>
+      <class name="testCases.Tc_06TermsandCondition"/>
+      <class name="testCases.Tc_05Addto_Cart"/>
+      <class name="testCases.Tc_01LauncApp"/>
+      <class name="testCases.Tc_07CompletePurchase"/>
+      <class name="testCases.Tc_03Us_Select"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="AndroidTest2">
+    <classes>
+      <class name="testCases.Tc_02Letshop"/>
+      <class name="testCases.Tc_04Validate_Toast"/>
+      <class name="testCases.Tc_06TermsandCondition"/>
+      <class name="testCases.Tc_05Addto_Cart"/>
+      <class name="testCases.Tc_01LauncApp"/>
+      <class name="testCases.Tc_07CompletePurchase"/>
+      <class name="testCases.Tc_03Us_Select"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
